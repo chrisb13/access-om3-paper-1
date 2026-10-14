@@ -120,6 +120,9 @@ ENAME=MC_25km_jra_iaf+wombatlite-test4-d28e0359
 
 #ESMDIR=/g/data/zv30/non-cmip/ACCESS-CM3/cm3-run-27-07-2026-PD-control/cm3-datastore/cm3-datastore.json
 #ENAME=cm3-run-27-07-2026-PD-control
+#
+ESMDIR=/g/data/ol01/outputs/access-om3-100km/MC_100km_jra_iaf+wombatlite-test1-e1de2a94/experiment_datastore.json
+ENAME=MC_100km_jra_iaf+wombatlite-test1-e1de2a94
 
 #supplementary
 ##AHogg GM* runs
@@ -171,12 +174,15 @@ array=(
     Timeseries_daily_extreme_from_2D_fields
     timeseries
     SSH
-    #wombatlite_global #currently not working because we are missing  skill_metrics
+    wombatlite_global
     Currents_streamfunction_variability
     SeaIce_Vol
     temp-salt-vs-depth-latitude
     Transects
     WM_evaluation
+    MLD_manual
+    Transects-mixing
+
 )
 #SSH uses a lot of memory !!
 
